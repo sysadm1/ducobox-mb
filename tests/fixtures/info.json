@@ -1,0 +1,13 @@
+{
+  "General": {
+    "Board": {
+      "PublicApiVersion": {"Val": "2.7"},
+      "BoxName": {"Val": "FOCUS"},
+      "BoxSubTypeName": {"Val": "Eu"},
+      "SerialDucoBox": {"Val": "REDACTED"}
+    },
+    "Modbus": {
+      "WriteReqCntRemain": {"Val": 500}
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "General": {
+    "Modbus": {
+      "Addr": {"Val": 124, "Min": 1, "Max": 254, "Inc": 1},
+      "Offset": {"Val": 1, "Min": 0, "Max": 1, "Inc": 1}
+    }
+  }
+}

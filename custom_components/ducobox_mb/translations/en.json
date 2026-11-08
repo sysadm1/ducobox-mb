@@ -1,0 +1,84 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "reconfigure_successful": "Re-discovery succeeded"
+        },
+        "error": {
+            "cannot_connect": "Failed to discover the board over REST. Discovery is a one-time REST call used only to learn node topology and Modbus addressing; it must succeed once even though all ongoing polling and control is Modbus-only.",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "zeroconf_confirm": {
+                "title": "Discovered Duco Connectivity Board 2.0",
+                "description": "Do you want to add the DucoBox Modbus integration for the board at {host}? This runs one REST call now to learn its node layout, then switches to Modbus TCP only."
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "port": "Modbus TCP port"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your Duco Connectivity Board 2.0.",
+                    "port": "Usually 502."
+                }
+            },
+            "reconfigure": {
+                "title": "Re-discover DucoBox Modbus nodes",
+                "description": "Runs the one-time REST discovery call again to pick up nodes that were added or removed.",
+                "data": {
+                    "host": "Host",
+                    "port": "Modbus TCP port"
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "identify": {
+                "name": "Identify"
+            }
+        },
+        "fan": {
+            "ventilation": {
+                "name": "Ventilation"
+            }
+        },
+        "select": {
+            "ventilation_state": {
+                "name": "Ventilation State"
+            }
+        },
+        "sensor": {
+            "state": {
+                "name": "Ventilation State"
+            },
+            "time_state_remain": {
+                "name": "Ventilation State Remaining Time"
+            },
+            "flow_lvl_tgt": {
+                "name": "Target Flow Level"
+            },
+            "rh": {
+                "name": "Relative Humidity"
+            },
+            "iaq_rh": {
+                "name": "Relative Humidity Air Quality Index"
+            },
+            "co2": {
+                "name": "CO2"
+            },
+            "iaq_co2": {
+                "name": "CO2 Air Quality Index"
+            },
+            "ventilation_problem": {
+                "name": "Ventilation Status",
+                "state": {
+                    "ok": "OK",
+                    "error": "Error",
+                    "inactive": "Inactive"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "domain": "ducobox_mb",
+  "name": "DucoBox Modbus",
+  "codeowners": [
+    "@sysadm1"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/sysadm1/ducobox-mb",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/sysadm1/ducobox-mb/issues",
+  "requirements": [
+    "pymodbus==3.16.2"
+  ],
+  "version": "1.0.0",
+  "zeroconf": [
+    {
+      "type": "_http._tcp.local.",
+      "name": "duco*"
+    }
+  ]
+}
